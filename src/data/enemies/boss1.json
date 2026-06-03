@@ -1,0 +1,46 @@
+{
+  "id": "boss_chrono_warden",
+  "name": "时序守望者",
+  "title": "扭曲时流的看守人",
+  "isBoss": true,
+  "hp": 150,
+  "tier": 4,
+  "intents": [
+    { "weight": 40, "action": "attack", "value": 10 },
+    { "weight": 30, "action": "defend", "value": 12 },
+    { "weight": 30, "action": "debuff", "value": 2, "status": "weak" }
+  ],
+  "phases": [
+    {
+      "name": "时序紊乱",
+      "hpThreshold": 0.6,
+      "intents": [
+        { "weight": 35, "action": "attack", "value": 14 },
+        { "weight": 25, "action": "defend", "value": 10 },
+        { "weight": 20, "action": "buff", "value": 2 },
+        { "weight": 20, "action": "debuff", "value": 3, "status": "vulnerable" }
+      ],
+      "transition": {
+        "dialogue": "\"时间……不属于你。\"",
+        "shieldGain": 15,
+        "applyToPlayer": { "status": "weak", "stacks": 2 }
+      }
+    },
+    {
+      "name": "时流崩溃",
+      "hpThreshold": 0.25,
+      "intents": [
+        { "weight": 45, "action": "attack", "value": 18 },
+        { "weight": 20, "action": "buff", "value": 3 },
+        { "weight": 20, "action": "debuff", "value": 3, "status": "weak" },
+        { "weight": 15, "action": "debuff", "value": 4, "status": "vulnerable" }
+      ],
+      "transition": {
+        "dialogue": "\"万物归于静止！\"",
+        "shieldGain": 20,
+        "clearDebuffs": true,
+        "applyToPlayer": { "status": "vulnerable", "stacks": 3 }
+      }
+    }
+  ]
+}

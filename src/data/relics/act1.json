@@ -1,0 +1,62 @@
+[
+  {
+    "id": "merchants_watch",
+    "name": "时间商人的怀表",
+    "desc": "商店物品价格降低 30%",
+    "rarity": "rare",
+    "trigger": "on_enter_shop",
+    "effects": [
+      { "type": "shop_discount", "value": 70 }
+    ]
+  },
+  {
+    "id": "clockkeepers_key",
+    "name": "守钟人的旧钥匙",
+    "desc": "每进入新楼层时获得 5 金币",
+    "rarity": "common",
+    "trigger": "on_floor_start",
+    "effects": [
+      { "type": "gold_bonus", "value": 5 }
+    ]
+  },
+  {
+    "id": "dream_crystal",
+    "name": "碎梦结晶",
+    "desc": "营地休息额外恢复 15% 最大 HP",
+    "rarity": "common",
+    "trigger": "on_rest",
+    "effects": [
+      { "type": "rest_bonus_heal", "value": 15 }
+    ]
+  },
+  {
+    "id": "war_drum",
+    "name": "回响战鼓",
+    "desc": "每场战斗开始时获得 6 点护盾",
+    "rarity": "common",
+    "trigger": "on_combat_start",
+    "effects": [
+      { "type": "shield_start", "value": 6 }
+    ]
+  },
+  {
+    "id": "golden_bell",
+    "name": "鎏金铃铛",
+    "desc": "每场战斗胜利后额外获得 8 金币",
+    "rarity": "rare",
+    "trigger": "on_combat_end",
+    "effects": [
+      { "type": "bonus_reward_gold", "value": 8 }
+    ]
+  },
+  {
+    "id": "heart_of_clock",
+    "name": "钟心脉动",
+    "desc": "最大 HP 永久 +15",
+    "rarity": "legendary",
+    "trigger": "passive_stat",
+    "effects": [
+      { "type": "max_hp_up", "value": 15 }
+    ]
+  }
+]

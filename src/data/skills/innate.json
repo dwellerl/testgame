@@ -1,0 +1,20 @@
+[
+  {
+    "id": "innate_attack",
+    "name": "基础攻击",
+    "apCost": 1,
+    "target": "single_enemy",
+    "effects": [
+      { "type": "damage", "value": 4 }
+    ]
+  },
+  {
+    "id": "innate_defend",
+    "name": "基础防御",
+    "apCost": 1,
+    "target": "self",
+    "effects": [
+      { "type": "shield", "value": 4 }
+    ]
+  }
+]

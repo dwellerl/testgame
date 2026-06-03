@@ -1,0 +1,58 @@
+[
+  {
+    "id": "passive_burning_blood",
+    "name": "沸血",
+    "desc": "每次造成燃烧时，额外施加 1 层",
+    "trigger": "on_deal_damage",
+    "effects": [],
+    "tags": ["fire"]
+  },
+  {
+    "id": "passive_thick_skin",
+    "name": "厚甲",
+    "desc": "每回合开始获得 2 点护盾",
+    "trigger": "on_turn_start",
+    "effects": [
+      { "type": "shield", "value": 2 }
+    ],
+    "tags": ["defense"]
+  },
+  {
+    "id": "passive_resonance_echo",
+    "name": "共鸣回响",
+    "desc": "释放大招后，获得 2 AP",
+    "trigger": "on_ultimate",
+    "effects": [
+      { "type": "gain_ap", "value": 2 }
+    ],
+    "tags": ["ultimate"]
+  },
+  {
+    "id": "passive_venom_mastery",
+    "name": "剧毒精通",
+    "desc": "中毒伤害额外 +1（每层）",
+    "trigger": "permanent",
+    "effects": [],
+    "tags": ["poison"]
+  },
+  {
+    "id": "passive_quick_hands",
+    "name": "灵巧",
+    "desc": "每场战斗第一回合额外 +1 AP",
+    "trigger": "on_turn_start",
+    "effects": [
+      { "type": "gain_ap", "value": 1 }
+    ],
+    "tags": ["utility"]
+  },
+  {
+    "id": "passive_counter_stance",
+    "name": "反击架势",
+    "desc": "受到攻击时，若有护盾则对攻击者造成 3 伤害",
+    "trigger": "on_take_damage",
+    "effects": [
+      { "type": "damage", "value": 3 }
+    ],
+    "tags": ["defense"]
+  }
+]

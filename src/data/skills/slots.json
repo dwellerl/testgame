@@ -1,0 +1,201 @@
+{
+  "light_a": [
+    {
+      "id": "light_a_flame_jab",
+      "name": "焰刺",
+      "apCost": 1,
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 5 },
+        { "type": "apply_status", "status": "burn", "stacks": 2 }
+      ],
+      "tags": ["fire"],
+      "slotType": "light_a",
+      "desc": "快速刺击附带灼烧"
+    },
+    {
+      "id": "light_a_venom_fang",
+      "name": "毒牙",
+      "apCost": 1,
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 3 },
+        { "type": "apply_status", "status": "poison", "stacks": 3 }
+      ],
+      "tags": ["poison"],
+      "slotType": "light_a",
+      "desc": "轻咬注入剧毒"
+    },
+    {
+      "id": "light_a_swift_blade",
+      "name": "疾风斩",
+      "apCost": 1,
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 7 }
+      ],
+      "tags": ["physical"],
+      "slotType": "light_a",
+      "desc": "纯粹的快速劈砍"
+    }
+  ],
+  "light_b": [
+    {
+      "id": "light_b_spark_chain",
+      "name": "弧光连击",
+      "apCost": 1,
+      "target": "all_enemies",
+      "effects": [
+        { "type": "damage", "value": 3 }
+      ],
+      "tags": ["fire", "aoe"],
+      "slotType": "light_b",
+      "desc": "火花弹射全体敌人"
+    },
+    {
+      "id": "light_b_corrosion",
+      "name": "腐蚀之触",
+      "apCost": 1,
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 2 },
+        { "type": "apply_status", "status": "weak", "stacks": 2 }
+      ],
+      "tags": ["poison", "debuff"],
+      "slotType": "light_b",
+      "desc": "削弱敌人的攻击力"
+    },
+    {
+      "id": "light_b_double_slash",
+      "name": "双重斩",
+      "apCost": 2,
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 10 }
+      ],
+      "tags": ["physical"],
+      "slotType": "light_b",
+      "desc": "连续两刀，伤害可观"
+    }
+  ],
+  "heavy": [
+    {
+      "id": "heavy_inferno",
+      "name": "业火",
+      "apCost": 3,
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 12 },
+        { "type": "apply_status", "status": "burn", "stacks": 4 }
+      ],
+      "tags": ["fire"],
+      "slotType": "heavy",
+      "desc": "烈焰吞噬，持续燃烧"
+    },
+    {
+      "id": "heavy_demolish",
+      "name": "粉碎",
+      "apCost": 3,
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 18 }
+      ],
+      "tags": ["physical"],
+      "slotType": "heavy",
+      "desc": "全力一击，暴力输出"
+    },
+    {
+      "id": "heavy_plague_wave",
+      "name": "瘟疫潮涌",
+      "apCost": 3,
+      "target": "all_enemies",
+      "effects": [
+        { "type": "damage", "value": 6 },
+        { "type": "apply_status", "status": "poison", "stacks": 4 },
+        { "type": "apply_status", "status": "vulnerable", "stacks": 2 }
+      ],
+      "tags": ["poison", "aoe"],
+      "slotType": "heavy",
+      "desc": "毒雾笼罩全场"
+    }
+  ],
+  "support": [
+    {
+      "id": "support_iron_wall",
+      "name": "铁壁",
+      "apCost": 1,
+      "target": "self",
+      "effects": [
+        { "type": "shield", "value": 10 }
+      ],
+      "tags": ["defense"],
+      "slotType": "support",
+      "desc": "坚实的防护屏障"
+    },
+    {
+      "id": "support_rejuvenate",
+      "name": "回春",
+      "apCost": 2,
+      "target": "self",
+      "effects": [
+        { "type": "heal", "value": 12 },
+        { "type": "shield", "value": 4 }
+      ],
+      "tags": ["heal"],
+      "slotType": "support",
+      "desc": "恢复生命并获得薄盾"
+    },
+    {
+      "id": "support_expose",
+      "name": "破绽洞察",
+      "apCost": 1,
+      "target": "single_enemy",
+      "effects": [
+        { "type": "apply_status", "status": "vulnerable", "stacks": 3 }
+      ],
+      "tags": ["debuff"],
+      "slotType": "support",
+      "desc": "标记敌人弱点，增加受到的伤害"
+    }
+  ],
+  "ultimate": [
+    {
+      "id": "ult_time_shatter",
+      "name": "时间断裂",
+      "apCost": 0,
+      "target": "all_enemies",
+      "effects": [
+        { "type": "damage", "value": 15 },
+        { "type": "apply_status", "status": "vulnerable", "stacks": 2 }
+      ],
+      "tags": ["temporal", "aoe"],
+      "slotType": "ultimate",
+      "desc": "撕裂时间洪流，全体重创"
+    },
+    {
+      "id": "ult_phoenix_flame",
+      "name": "凤凰焚天",
+      "apCost": 0,
+      "target": "all_enemies",
+      "effects": [
+        { "type": "damage", "value": 8 },
+        { "type": "apply_status", "status": "burn", "stacks": 6 }
+      ],
+      "tags": ["fire", "aoe"],
+      "slotType": "ultimate",
+      "desc": "烈焰新生，焚尽一切"
+    },
+    {
+      "id": "ult_soul_drain",
+      "name": "噬魂",
+      "apCost": 0,
+      "target": "all_enemies",
+      "effects": [
+        { "type": "damage", "value": 10 }
+      ],
+      "tags": ["poison", "aoe"],
+      "slotType": "ultimate",
+      "desc": "汲取全场生命力，自身回复等量HP"
+    }
+  ]
+}

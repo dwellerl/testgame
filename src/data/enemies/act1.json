@@ -1,0 +1,80 @@
+[
+  {
+    "id": "enemy_echo_moth",
+    "name": "回声蛾",
+    "hp": 20,
+    "tier": 1,
+    "intents": [
+      { "weight": 50, "action": "attack", "value": 4 },
+      { "weight": 30, "action": "debuff", "value": 2, "status": "vulnerable" },
+      { "weight": 20, "action": "debuff", "value": 3, "status": "poison" }
+    ]
+  },
+  {
+    "id": "enemy_shade",
+    "name": "残影",
+    "hp": 30,
+    "tier": 1,
+    "intents": [
+      { "weight": 60, "action": "attack", "value": 6 },
+      { "weight": 40, "action": "defend", "value": 5 }
+    ]
+  },
+  {
+    "id": "enemy_clock_spider",
+    "name": "钟蛛",
+    "hp": 45,
+    "tier": 2,
+    "intents": [
+      { "weight": 40, "action": "attack", "value": 8 },
+      { "weight": 30, "action": "defend", "value": 6 },
+      { "weight": 30, "action": "debuff", "value": 2, "status": "weak" }
+    ]
+  },
+  {
+    "id": "enemy_rust_golem",
+    "name": "锈铁傀儡",
+    "hp": 60,
+    "tier": 2,
+    "intents": [
+      { "weight": 30, "action": "attack", "value": 10 },
+      { "weight": 40, "action": "defend", "value": 10 },
+      { "weight": 30, "action": "buff", "value": 2 }
+    ]
+  },
+  {
+    "id": "enemy_time_warden",
+    "name": "时蚀守卫",
+    "hp": 55,
+    "tier": 3,
+    "intents": [
+      { "weight": 35, "action": "attack", "value": 12 },
+      { "weight": 25, "action": "defend", "value": 8 },
+      { "weight": 20, "action": "buff", "value": 1 },
+      { "weight": 20, "action": "debuff", "value": 2, "status": "weak" }
+    ]
+  },
+  {
+    "id": "enemy_void_crawler",
+    "name": "虚空蠕虫",
+    "hp": 35,
+    "tier": 2,
+    "intents": [
+      { "weight": 50, "action": "attack", "value": 7 },
+      { "weight": 25, "action": "debuff", "value": 3, "status": "poison" },
+      { "weight": 25, "action": "debuff", "value": 2, "status": "vulnerable" }
+    ]
+  },
+  {
+    "id": "enemy_shattered_bell",
+    "name": "碎钟灵",
+    "hp": 70,
+    "tier": 3,
+    "intents": [
+      { "weight": 30, "action": "attack", "value": 14 },
+      { "weight": 30, "action": "defend", "value": 12 },
+      { "weight": 20, "action": "buff", "value": 2 },
+      { "weight": 20, "action": "debuff", "value": 3, "status": "weak" }
+    ]
+  }
+]
