@@ -30,7 +30,7 @@ const fireJab: SkillData = {
   target: 'single_enemy',
   effects: [
     { type: 'damage', value: 5 },
-    { type: 'apply_status', status: 'burn', stacks: 2 },
+    { type: 'apply_status', value: 0, status: 'burn', stacks: 2 },
   ],
   tags: ['fire'],
   slotType: 'light_a',
@@ -77,7 +77,7 @@ const ultTimeShatter: SkillData = {
   target: 'all_enemies',
   effects: [
     { type: 'damage', value: 15 },
-    { type: 'apply_status', status: 'vulnerable', stacks: 2 },
+    { type: 'apply_status', value: 0, status: 'vulnerable', stacks: 2 },
   ],
   tags: ['temporal', 'aoe'],
   slotType: 'ultimate',
